@@ -10,3 +10,36 @@
 <%= link_to "Resume", "/assets/images/Resume.pdf", { :class=>"text_decoration" } %>
 </div>
 </header>
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+
+</head>
+<body>
+  <div class="container">
+    <div id="slides">
+    <%= image_tag("example-slide-1.jpg") %>
+    <%= image_tag("example-slide-2.jpg") %>
+    <%= image_tag("example-slide-3.jpg") %>
+    <%= image_tag("example-slide-4.jpg") %>
+    </div>
+  </div>
+
+  
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        play: {
+          active: true,
+          auto: true,
+          interval: 4000,
+          swap: true
+        }
+      });
+    });
+  </script>
+</body>
+</html>
