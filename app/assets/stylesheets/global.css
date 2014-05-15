@@ -1,0 +1,30 @@
+.text_decoration {
+  text-decoration: none;
+}
+
+.portrait_dimension {
+  height: 25%;
+  width: 25%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; /* future proofing */
+  -khtml-border-radius: 10px;
+  margin-left: 95px;
+}
+
+.text_align {
+  text-align: center;
+  display: inline-block;
+}
+
+.inline {
+  float: left;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
