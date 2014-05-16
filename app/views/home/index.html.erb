@@ -31,7 +31,37 @@
   <h1>Big Time Production</h1>
   <h2>Commercial Director Portfolio Site</h2>
   <div class="container">
-  <div class="image_holder">project images go here</div>
+    <div id="slider" class="flexslider">
+      <ul class="slides">
+        <li>
+          <%= image_tag("slide1.jpg") %>
+        </li>
+        <li>
+          <%= image_tag("slide2.jpg") %>
+        </li>
+        <li>
+          <%= image_tag("slide3.jpg") %>
+        </li>
+        <li>
+          <%= image_tag("slide4.jpg") %>
+        </li>
+      </ul>
+  </div>
+  <div id="carousel" class="flexslider">
+     <ul class="slides">
+        <li>
+          <%= image_tag("slide1.jpg") %>
+        </li>
+        <li>
+          <%= image_tag("slide2.jpg") %>
+        </li>
+        <li>
+          <%= image_tag("slide3.jpg") %>
+        </li>
+        <li>
+          <%= image_tag("slide4.jpg") %>
+        </li>
+      </ul>
   </div>
   <p>longer project description</p>
   <h2>Technologies:</h2>
@@ -44,9 +74,39 @@
   <div>
   <h1>Project Two</h1>
   <h2> one line description</h2>
-  <div class="container">
-  <div class="image_holder">project images go here</div>
-  </div>
+   <div class="container">
+<div id="slider_two" class="flexslider">
+  <ul class="slides">
+    <li>
+    <%= image_tag("slide10.jpg") %>
+    </li>
+    <li>
+    <%= image_tag("slide20.jpg") %>
+    </li>
+    <li>
+    <%= image_tag("slide30.jpg") %>
+    </li>
+    <li>
+    <%= image_tag("slide40.jpg") %>
+    </li>
+  </ul>
+</div>
+<div id="carousel_two" class="flexslider">
+  <ul class="slides">
+    <li>
+    <%= image_tag("slide10.jpg") %>
+    </li>
+    <li>
+    <%= image_tag("slide20.jpg") %>
+    </li>
+    <li>
+    <%= image_tag("slide30.jpg") %>
+    </li>
+    <li>
+    <%= image_tag("slide40.jpg") %>
+    </li>
+  </ul>
+</div>
   <p>longer project description</p>
   <h2>Technologies:</h2>
   <ul>
@@ -58,9 +118,39 @@
   <div>
   <h1>Project Three</h1>
   <h2> one line description</h2>
-  <div class="container">
-  <div class="image_holder">project images go here</div>
-  </div>
+   <div class="container">
+<div id="slider_three" class="flexslider">
+  <ul class="slides">
+    <li>
+    <%= image_tag("slide1.jpg") %>
+    </li>
+    <li>
+    <%= image_tag("slide2.jpg") %>
+    </li>
+    <li>
+    <%= image_tag("slide3.jpg") %>
+    </li>
+    <li>
+    <%= image_tag("slide4.jpg") %>
+    </li>
+  </ul>
+</div>
+<div id="carousel_three" class="flexslider">
+  <ul class="slides">
+    <li>
+    <%= image_tag("slide1.jpg") %>
+    </li>
+    <li>
+    <%= image_tag("slide2.jpg") %>
+    </li>
+    <li>
+    <%= image_tag("slide3.jpg") %>
+    </li>
+    <li>
+    <%= image_tag("slide4.jpg") %>
+    </li>
+  </ul>
+</div>
   <p>longer project description</p>
   <h2>Technologies:</h2>
   <ul>
@@ -70,4 +160,68 @@
   </ul>
   </div>
 </body>
+<script>
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+   
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
+
+$(window).load(function() {
+   $('#carousel_two').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+   
+  $('#slider_two').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
+
+$(window).load(function() {
+   $('#carousel_three').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+   
+  $('#slider_three').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
+  
+
+</script>
 </html>
