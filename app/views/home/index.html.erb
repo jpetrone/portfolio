@@ -78,32 +78,32 @@
 <div id="slider_two" class="flexslider">
   <ul class="slides">
     <li>
-    <%= image_tag("slide10.jpg") %>
+    <%= image_tag("slide1.jpg") %>
     </li>
     <li>
-    <%= image_tag("slide20.jpg") %>
+    <%= image_tag("slide2.jpg") %>
     </li>
     <li>
-    <%= image_tag("slide30.jpg") %>
+    <%= image_tag("slide3.jpg") %>
     </li>
     <li>
-    <%= image_tag("slide40.jpg") %>
+    <%= image_tag("slide4.jpg") %>
     </li>
   </ul>
 </div>
 <div id="carousel_two" class="flexslider">
   <ul class="slides">
     <li>
-    <%= image_tag("slide10.jpg") %>
+    <%= image_tag("slide1.jpg") %>
     </li>
     <li>
-    <%= image_tag("slide20.jpg") %>
+    <%= image_tag("slide2.jpg") %>
     </li>
     <li>
-    <%= image_tag("slide30.jpg") %>
+    <%= image_tag("slide3.jpg") %>
     </li>
     <li>
-    <%= image_tag("slide40.jpg") %>
+    <%= image_tag("slide4.jpg") %>
     </li>
   </ul>
 </div>
@@ -180,9 +180,7 @@ $(window).load(function() {
     slideshow: false,
     sync: "#carousel"
   });
-});
 
-$(window).load(function() {
    $('#carousel_two').flexslider({
     animation: "slide",
     controlNav: false,
@@ -190,7 +188,7 @@ $(window).load(function() {
     slideshow: false,
     itemWidth: 210,
     itemMargin: 5,
-    asNavFor: '#slider'
+    asNavFor: '#slider_two'
   });
    
   $('#slider_two').flexslider({
@@ -198,11 +196,9 @@ $(window).load(function() {
     controlNav: false,
     animationLoop: false,
     slideshow: false,
-    sync: "#carousel"
+    sync: "#carousel_two"
   });
-});
 
-$(window).load(function() {
    $('#carousel_three').flexslider({
     animation: "slide",
     controlNav: false,
@@ -210,7 +206,7 @@ $(window).load(function() {
     slideshow: false,
     itemWidth: 210,
     itemMargin: 5,
-    asNavFor: '#slider'
+    asNavFor: '#slider_three'
   });
    
   $('#slider_three').flexslider({
@@ -218,10 +214,10 @@ $(window).load(function() {
     controlNav: false,
     animationLoop: false,
     slideshow: false,
-    sync: "#carousel"
+    sync: "#carousel_three"
   });
 });
-  
+
 
 </script>
 </html>
