@@ -301,6 +301,7 @@ body {
 }
 .span12 {
   width: 940px;
+  margin: 0;
 }
 .span11 {
   width: 860px;
