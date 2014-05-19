@@ -1865,6 +1865,10 @@ a.btn {
       background-position: 0 -26px
     }
 
+    .slidesjs-pagination {
+      padding-right: 440px;
+    }
+
     #slides a:link,
     #slides a:visited {
       color: #333
@@ -1923,4 +1927,5 @@ a.btn {
       text-decoration: none;
     }
 
+     
 

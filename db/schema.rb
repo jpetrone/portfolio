@@ -11,9 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140515184628) do
+ActiveRecord::Schema.define(version: 20140516184854) do
 
   create_table "home", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "resume", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -15,5 +15,5 @@
 #   inflect.acronym 'RESTful'
 # end
 ActiveSupport::Inflector.inflections do |inflect|
-  inflect.uncountable %w( home )
+  inflect.uncountable %w( home resume )
 end
