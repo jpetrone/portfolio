@@ -5,6 +5,7 @@ class ResumeController < ApplicationController
   # GET /resume.json
   def index
     @resume = Resume.all
+    redirect_to "https://s3-us-west-1.amazonaws.com/jacksonsandlandportfolio/Resume.pdf"
   end
 
   # GET /resume/1
@@ -36,6 +37,7 @@ class ResumeController < ApplicationController
       end
     end
   end
+
 
   # PATCH/PUT /resume/1
   # PATCH/PUT /resume/1.json
